@@ -102,7 +102,7 @@ Uncomment the #define useSimpleVector to use the SimpleVectorLibrary instead of 
              - Fixed mode-switch behavior in `setSingle()` so stale list data is cleared when returning to single-value mode.
              - Fixed `addValue()` single-to-list conversion to reset prior backing list state before seeding with the single value.
              - Restored `setList()` overload compatibility for `useSimpleVector` mode.
-             - Added broader regression test coverage for constructor, conversion, and mode-transition flows.
+             - No test suite updates were included in this sync.
 
 ### Previous Versions:
 - **v1.0.0**  (2025-02-15)
