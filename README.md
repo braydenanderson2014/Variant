@@ -1,14 +1,14 @@
 # Variant Class
 
 ## Overview
-The Variant class is a template-based utility that can store either a single value of type T or a list of values using ArrayList<T>. This allows flexible storage of both individual elements and collections dynamically.
+The Variant class is a template-based utility that can store either a single value of type T or a list of values using ArrayList<T> (or SimpleVector<T> when `useSimpleVector` is defined). This allows flexible storage of both individual elements and collections dynamically.
 
 ## Features
 Supports both single-value storage and list storage.
 Can be converted from a single value to a list dynamically.
 Methods to set, retrieve, and modify values.
 Provides a size() method to determine how many elements are stored.
-Uses ArrayList<T> for list storage.
+Uses ArrayList<T> or SimpleVector<T> for list storage (configurable at compile time via `useSimpleVector`).
 
 ## Usage
 Including the Header
