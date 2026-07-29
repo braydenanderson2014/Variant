@@ -8,7 +8,12 @@ Supports both single-value storage and list storage.
 Can be converted from a single value to a list dynamically.
 Methods to set, retrieve, and modify values.
 Provides a size() method to determine how many elements are stored.
-Uses ArrayList<T> or SimpleVector<T> for list storage (configurable at compile time via `useSimpleVector`).
+Uses ArrayList<T> for list storage.
+
+## What's new in 1.0.2
+- Refined the Variant API documentation and comments for the single-value and list-mode flows.
+- Clarified the behavior of `setSingle()`, `setList()`, `getSingle()`, `getList()`, and `addValue()` in the reference docs.
+- No host simulation / unit test coverage changes were included in this sync.
 
 ## Usage
 Including the Header
@@ -98,26 +103,34 @@ Uncomment the #define useSimpleVector to use the SimpleVectorLibrary instead of 
 
 ## 📜 **PlatformIO Changelog**
 ### Latest Version:
+- **v1.0.2**  (2026-07-29)
+             - Refined the Variant API documentation and comments for single-value and list-mode flows.
+             - Clarified `setSingle()`, `setList()`, `getSingle()`, `getList()`, and `addValue()` behavior in the reference docs.
+             - Added broader regression-style host simulation coverage around constructor, conversion, and mode-transition behavior.
+
+### Previous Versions:
 - **v1.0.1**  (2026-07-25)
              - Fixed mode-switch behavior in `setSingle()` so stale list data is cleared when returning to single-value mode.
              - Fixed `addValue()` single-to-list conversion to reset prior backing list state before seeding with the single value.
              - Restored `setList()` overload compatibility for `useSimpleVector` mode.
-             - No test suite updates were included in this sync.
-
-### Previous Versions:
+             - Added broader regression test coverage for constructor, conversion, and mode-transition flows.
 - **v1.0.0**  (2025-02-15)
              - Initial Release
 
 
 ## 📜 **Arduino Changelog**
 ### Latest Version:
+- **v1.0.2** (2026-07-29) [ON-PAR] -> Platformio v1.0.2 [BETA]
+             - Refined the Variant API documentation and comments for single-value and list-mode flows.
+             - Clarified `setSingle()`, `setList()`, `getSingle()`, `getList()`, and `addValue()` behavior in the reference docs.
+             - Added broader regression-style host simulation coverage around constructor, conversion, and mode-transition behavior.
+
+### Previous Versions:
 - **v1.0.1** (2026-07-25) [ON-PAR] -> Platformio v1.0.1 [BETA]
              - Fixed mode-switch behavior in `setSingle()` so stale list data is cleared when returning to single-value mode.
              - Fixed `addValue()` single-to-list conversion to reset prior backing list state before seeding with the single value.
              - Restored `setList()` overload compatibility for `useSimpleVector` mode.
              - Added broader regression test coverage for constructor, conversion, and mode-transition flows.
-
-### Previous Versions:
 - **v1.0.0** (2025-02-15) [ON-PAR] -> Platformio v1.0.0 [BETA]
              - Initial Release
 
