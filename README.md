@@ -13,7 +13,7 @@ Uses ArrayList<T> for list storage.
 ## What's new in 1.0.2
 - Refined the Variant API documentation and comments for the single-value and list-mode flows.
 - Clarified the behavior of `setSingle()`, `setList()`, `getSingle()`, `getList()`, and `addValue()` in the reference docs.
-- Added broader regression-style host simulation coverage around constructor, conversion, and mode-transition behavior.
+- No host simulation / unit test coverage changes were included in this sync.
 
 ## Usage
 Including the Header
